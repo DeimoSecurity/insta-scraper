@@ -48,7 +48,7 @@ def instascrap():
     instaWithID = instaURLReq[instaURLReq.find(startsWithID)+len(startsWithID):instaURLReq.rfind(endsWithID)]
     #for followedby
     startsWithFollowed = '"edge_followed_by":{"count":' 
-    endsWithFollowed = '},"followed_by_viewer"'
+    endsWithFollowed = '},"fbid"'
     instaFollowers = instaURLReq[instaURLReq.find(startsWithFollowed)+len(startsWithFollowed):instaURLReq.rfind(endsWithFollowed)]
     #for followers
     startsWithFollowing = '"edge_follow":{"count":'
